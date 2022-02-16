@@ -2,19 +2,87 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -29,8 +97,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -38,17 +115,21 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
   content: none;
 }
 
@@ -57,15 +138,15 @@ table {
   border-spacing: 0;
 }
 
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-input[type=search] {
+input[type='search'] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
@@ -237,9 +318,9 @@ select {
  *    Known issue: inner spacing remains in IE 6.
  */
 button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -262,8 +343,8 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-input[type=checkbox],
-input[type=radio] {
+input[type='checkbox'],
+input[type='radio'] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -279,7 +360,7 @@ input[type=radio] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type=search] {
+input[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
@@ -292,8 +373,8 @@ input[type=search] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -369,12 +450,12 @@ html {
 }
 
 body {
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 600;
   line-height: 20px;
   color: #fff;
   background-color: #0b1d26;
-  background-image: url("/assets/images/bg.jpg");
+  background-image: url('assets/images/bg.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -431,7 +512,7 @@ img {
     overflow: auto;
   }
   .header__menu::before {
-    content: "";
+    content: '';
     position: fixed;
     width: 100%;
     top: 0;
@@ -454,7 +535,9 @@ img {
     height: 18px;
     cursor: pointer;
   }
-  .header__icon::before, .header__icon::after, .header__icon span {
+  .header__icon::before,
+  .header__icon::after,
+  .header__icon span {
     left: 0;
     position: absolute;
     height: 2px;
@@ -462,8 +545,9 @@ img {
     transition: all 0.3s ease 0s;
     background-color: #fff;
   }
-  .header__icon::before, .header__icon::after {
-    content: "";
+  .header__icon::before,
+  .header__icon::after {
+    content: '';
   }
   .header__icon::before {
     top: 0;
@@ -509,10 +593,10 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  content: "";
+  content: '';
   width: 37px;
   height: 37px;
-  background: url("/assets/images/header/account.svg");
+  background: url('assets/images/header/account.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -521,10 +605,10 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  content: "";
+  content: '';
   width: 24px;
   height: 24px;
-  background: url("/assets/images/header/account.svg");
+  background: url('assets/images/header/account.svg');
   background-repeat: no-repeat;
 }
 
@@ -604,7 +688,7 @@ img {
   position: absolute;
   bottom: -6px;
   right: 0;
-  content: "";
+  content: '';
   width: 100%;
   border: 1px solid transparent;
   transition: all 0.2s linear;
@@ -667,7 +751,7 @@ img {
   margin-bottom: 32px;
 }
 .intro__title {
-  font-family: "Chronicle Display";
+  font-family: 'Chronicle Display';
   font-style: normal;
   font-weight: 600;
   font-size: 88px;
@@ -707,10 +791,10 @@ img {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
-  content: "";
+  content: '';
   width: 16px;
   height: 24px;
-  background: url("/assets/images/intro/arrow__bottom.svg");
+  background: url('/assets/images/intro/arrow__bottom.svg');
   background-repeat: no-repeat;
   transition: all 0.2s linear;
 }
@@ -730,7 +814,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  content: "";
+  content: '';
   width: 72px;
   border: 2px solid #fbd784;
 }
@@ -893,10 +977,10 @@ img {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
-  content: "";
+  content: '';
   width: 24px;
   height: 16px;
-  background: url("/assets/images/sections/arrow__right.svg");
+  background: url('/assets/images/sections/arrow__right.svg');
   background-repeat: no-repeat;
   transition: all 0.2s linear;
 }
