@@ -1,0 +1,94 @@
+.intro {
+  padding-top: 198px;
+  min-height: 1200px;
+
+  @include breakpoint(1700px) {
+    padding-top: 100px;
+    min-height: 1000px;
+  }
+  @include breakpoint(1100px) {
+    min-height: 750px;
+  }
+  @include breakpoint(992px) {
+    padding-top: 60px;
+    min-height: 650px;
+  }
+  @include breakpoint(768px) {
+    padding-top: 30px;
+    min-height: 450px;
+  }
+  @include breakpoint(480px) {
+    padding: 0 0 70px;
+    min-height: max-content;
+  }
+
+  &__inner {
+  }
+  &__block {
+    margin: 0 auto;
+
+    text-align: left;
+
+    max-width: 950px;
+  }
+
+  &__subtitle {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-family: 'Chronicle Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 100px;
+
+    text-transform: capitalize;
+
+    margin-bottom: 32px;
+
+    @include breakpoint(992px) {
+      font-size: 78px;
+      line-height: 80px;
+    }
+    @include breakpoint(768px) {
+      font-size: 60px;
+      line-height: 50px;
+    }
+    @include breakpoint(480px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  &__scroll {
+    position: relative;
+
+    display: inline-block;
+    padding-right: 32px;
+
+    line-height: 22px;
+
+    &:hover {
+      &::after {
+        top: 90%;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      content: '';
+
+      width: 16px;
+      height: 24px;
+
+      background: url('/assets/images/intro/arrow__bottom.svg');
+      background-repeat: no-repeat;
+
+      transition: all 0.2s linear;
+    }
+  }
+}

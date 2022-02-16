@@ -1,0 +1,35 @@
+.subtitle {
+  position: relative;
+
+  display: block;
+
+  padding-left: 104px;
+
+  font-weight: 800;
+  line-height: 22px;
+
+  color: $accent;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: '';
+
+    width: 72px;
+    border: 2px solid $accent;
+
+    @include breakpoint(360px) {
+      width: 46px;
+    }
+  }
+
+  @include breakpoint(360px) {
+    padding-left: 60px;
+
+    line-height: 20px;
+  }
+}
