@@ -455,7 +455,7 @@ body {
   line-height: 20px;
   color: #fff;
   background-color: #0b1d26;
-  background-image: url('assets/images/bg.jpg');
+  background-image: url('../images/bg.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -596,7 +596,7 @@ img {
   content: '';
   width: 37px;
   height: 37px;
-  background: url('assets/images/header/account.svg');
+  background: url('../images/header/account.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -608,7 +608,7 @@ img {
   content: '';
   width: 24px;
   height: 24px;
-  background: url('assets/images/header/account.svg');
+  background: url('../images/header/account.svg');
   background-repeat: no-repeat;
 }
 
@@ -794,7 +794,7 @@ img {
   content: '';
   width: 16px;
   height: 24px;
-  background: url('/assets/images/intro/arrow__bottom.svg');
+  background: url('../images/intro/arrow__bottom.svg');
   background-repeat: no-repeat;
   transition: all 0.2s linear;
 }
@@ -980,7 +980,7 @@ img {
   content: '';
   width: 24px;
   height: 16px;
-  background: url('/assets/images/sections/arrow__right.svg');
+  background: url('../images/sections/arrow__right.svg');
   background-repeat: no-repeat;
   transition: all 0.2s linear;
 }
