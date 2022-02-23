@@ -374,7 +374,7 @@ body {
   line-height: 20px;
   color: #fff;
   background-color: #0b1d26;
-  background-image: url("/assets/images/bg.jpg");
+  background-image: url("../images/bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -512,7 +512,7 @@ img {
   content: "";
   width: 37px;
   height: 37px;
-  background: url("/assets/images/header/account.svg");
+  background: url("../images/header/account.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -524,7 +524,7 @@ img {
   content: "";
   width: 24px;
   height: 24px;
-  background: url("/assets/images/header/account.svg");
+  background: url("../images/header/account.svg");
   background-repeat: no-repeat;
 }
 
@@ -550,26 +550,6 @@ img {
 .container--header {
   max-width: 100%;
   padding: 0 4%;
-}
-
-.btn {
-  display: inline-block;
-  vertical-align: top;
-  padding: 1.12em 2.1em;
-  background: #121212;
-  border: none;
-  cursor: pointer;
-  border-radius: 3em;
-  font-family: inherit;
-  font-size: 1.2rem;
-  line-height: 1.1;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-  transition: background-color 0.2s linear;
-}
-.btn:hover {
-  text-decoration: none;
 }
 
 .nav--mobile {
@@ -666,6 +646,11 @@ img {
 .intro__subtitle {
   margin-bottom: 32px;
 }
+@media screen and (max-width: 480px) {
+  .intro__subtitle {
+    margin-bottom: 15px;
+  }
+}
 .intro__title {
   font-family: "Chronicle Display";
   font-style: normal;
@@ -710,7 +695,7 @@ img {
   content: "";
   width: 16px;
   height: 24px;
-  background: url("/assets/images/intro/arrow__bottom.svg");
+  background: url("../images/intro/arrow__bottom.svg");
   background-repeat: no-repeat;
   transition: all 0.2s linear;
 }
@@ -838,6 +823,11 @@ img {
 .section__subtitle {
   margin-bottom: 27px;
 }
+@media screen and (max-width: 480px) {
+  .section__subtitle {
+    margin-bottom: 10px;
+  }
+}
 .section__title {
   font-family: Chronicle Display;
   font-size: 64px;
@@ -896,7 +886,7 @@ img {
   content: "";
   width: 24px;
   height: 16px;
-  background: url("/assets/images/sections/arrow__right.svg");
+  background: url("../images/sections/arrow__right.svg");
   background-repeat: no-repeat;
   transition: all 0.2s linear;
 }

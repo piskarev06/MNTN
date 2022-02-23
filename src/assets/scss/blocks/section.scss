@@ -84,6 +84,10 @@
 
   &__subtitle {
     margin-bottom: 27px;
+
+    @include breakpoint(480px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__title {
@@ -148,7 +152,7 @@
       width: 24px;
       height: 16px;
 
-      background: url('/assets/images/sections/arrow__right.svg');
+      background: url('../images/sections/arrow__right.svg');
       background-repeat: no-repeat;
 
       transition: all 0.2s linear;

@@ -33,8 +33,6 @@
         width: 100%;
         top: 0;
         left: 0;
-        // height: 70px;
-        // background-color: #fff;
         z-index: 2;
       }
 
@@ -131,7 +129,7 @@
       width: 37px;
       height: 37px;
 
-      background: url('/assets/images/header/account.svg');
+      background: url('../images/header/account.svg');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -147,7 +145,7 @@
     width: 24px;
     height: 24px;
 
-    background: url('/assets/images/header/account.svg');
+    background: url('../images/header/account.svg');
     background-repeat: no-repeat;
   }
 }
